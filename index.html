@@ -1,0 +1,1616 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Box Calendário 2022</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8abf0ff8b8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- onload="scroll()" -->
+
+<header>
+<div class="title">Calendário 2022</div>
+<div class="meses">
+    <ul>
+        <li><a href="#jan">Jan</a></li>
+        <li><a href="#fev">Fev</a></li>
+        <li><a href="#mar">Mar</a></li>
+        <li><a href="#abr">Abr</a></li>
+        <li><a href="#mai">Mai</a></li>
+        <li><a href="#jun">Jun</a></li>
+        <li><a href="#jul">Jul</a></li>
+        <li><a href="#ago">Ago</a></li>
+        <li><a href="#set">Set</a></li>
+        <li><a href="#out">Out</a></li>
+        <li><a href="#nov">Nov</a></li>
+        <li><a href="#dez">Dez</a></li>
+    </ul>
+</div>
+</header>
+
+
+<div class="bt-conteiner">
+    <div class="buttons">
+        <button class="btn" onclick="filterObjects('all')">Todos</button>
+        <button class="btn" onclick="filterObjects('caab')">Caab</button>
+        <button class="btn" onclick="filterObjects('p5')">Infantil-FI</button>
+        <button class="btn" onclick="filterObjects('f2m')">FII-Médio</button>
+        <button class="btn" onclick="filterObjects('asp')">Asp</button>
+        <button class="btn" onclick="filterObjects('usb')">Usb</button>
+        <button class="btn" onclick="filterObjects('outros')">Outros</button>
+        <button class="btn" onclick="filterObjects('feriados')">Feriados</button>
+    </div>
+</div>
+
+<section class="conteinerprincipal">
+
+    <div class="wrap-cal-num">
+
+        <div class="container">
+
+            <div class="calendar">
+                
+                <div class="month">
+
+                    <i class="fa-solid fa-angle-left prev"></i>
+                
+                    <div class="date">
+                        <h1 id="h1Mes"></h1>
+                        <p></p>
+                    </div>
+                
+                    <i class="fa-solid fa-angle-right next"></i>
+                
+                </div>
+                
+                <div class="weekdays">
+
+                    <div>Dom</div>
+                    <div>Seg</div>
+                    <div>Ter</div>
+                    <div>Qua</div>
+                    <div>Qui</div>
+                    <div>Sex</div>
+                    <div>Sab</div>
+                
+                </div>
+
+                <div class="days">
+                </div>
+
+            <button class="btn-hoje">Hoje</button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="objects">
+
+<!-- MMMMMMMMMMMMMMMMMMMM      J  A  N  E  I  R  O      MMMMMMMMMMMMMMMMMMMM -->
+     
+
+    <div class="mes" id="jan">
+
+        <h3>Janeiro</h3>
+
+        <div class="linha feriados" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">01</div>
+                <div class="evento">Feriado Confraternização Universal
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">27/12 a 31/01</div>
+                <div class="evento">Férias Escolares dos professores
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+        
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">27/12 a 16/01</div>
+                <div class="evento">Férias dos gestores escolares
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+
+        <div class="linha outros" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">Até 17</div>
+                <div class="evento">Todos os gestores retornarem ao trabalho
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">nome</div>
+            </div>
+
+        </div>
+
+        <div class="linha asp pastor" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">16 a 30</div>
+                <div class="evento">Missão Caleb (cancelado por conta do surto de covid em Guaraqueçaba)
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Pr Eduardo</div>
+            </div>
+
+        </div>
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">17 a 19</div>
+                <div class="evento">GEPEA (presencial) – USB
+                    <p class="detalhes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nemo.</p>
+                </div>
+                <div class="resp">USB</div>
+            </div>
+
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">20</div>
+                <div class="evento">Reunião SOE e SOE – Fund 1 - Planejamento Aprimora – presencial ASP
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol Denise</div>
+            </div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">24</div>
+                <div class="evento">Capacitação de Monitores e Coordenadores de disciplina (8h30 às 17h)
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Rudi</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">25</div>
+                <div class="evento">Comissão de Educação/Diretiva
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">ASP</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">25</div>
+                <div class="evento">Reunião das bibliotecárias (remoto)
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Alexandro</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">26 e 27</div>
+                <div class="evento">Planejamento Administrativo (Diretores, vices, tesoureiros, secretários, capelães, sop e soe) 
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">ADM</div>
+            </div>
+        </div>
+
+        <div class="linha outros" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">26</div>
+                <div class="evento">Feriado Municipal em Fazenda Rio Grande
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Outros</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">28</div>
+                <div class="evento">Capacitação e treinamento com zeladoria – (9h às 11h)
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Alexandro</div>
+            </div>
+        </div>
+    
+    </div>
+
+
+<!-- MMMMMMMMMMMMMMMMMMMM      F  E  V  E  R  E  I  R  O      MMMMMMMMMMMMMMMMMMMM -->
+
+
+    <div class="mes" id="fev">
+
+        <h3>Fevereiro</h3>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">01 a 24</div>
+                <div class="evento">Provas Diagnósticas – DSA (PAEEB)
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">01 a 04</div>
+                <div class="evento">Capacitação e Planejamento - unidades escolares
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol Giselle</div>
+            </div>
+        </div>
+        
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">02</div>
+                <div class="evento">Capacitação profs de 1º ao 5º ano – Aprimora (ON LINE) 13h30
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">02</div>
+                <div class="evento">Encontro de professores - Competência Leitora - Fund 2 e Médio - 9 horas (zoom) - Profº Russo
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Giselle</div>
+            </div>
+
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">02</div>
+                <div class="evento">Capacitação de profs de Redação – fund 2 e EM (zoom) - 14 horas - profº Russo
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Giselle</div>
+            </div>
+
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">03</div>
+                <div class="evento">Capacitação Geral ASP – presencial – Igreja Central de Curitiba (8h30)
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol Giselle</div>
+            </div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">03</div>
+                <div class="evento">Reunião CAAB o dia todo
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol Giselle</div>
+            </div>
+        </div>
+
+        <div class="linha caab f2m" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">03</div>
+                <div class="evento">Reunião de pais online - EFII e EM
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Douglas</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">03</div>
+                <div class="evento">Reunião com nutricionista e cantinas - ASP 
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Alexandro</div>
+            </div>
+        </div>
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">03</div>
+                <div class="evento">Aula Inaugural – Chave do Enem
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">USB</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">04</div>
+                <div class="evento">Reunião com profs de Educação Física - ASP
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol Giselle</div>
+            </div>
+        </div>
+
+        <div class="linha caab p5" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">04</div>
+                <div class="evento">Organização das salas EI/FI
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol</div>
+            </div>
+        </div>
+    
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">05 a 09</div>
+                <div class="evento">Concílio pastoral ASP - Foz do Iguaçu
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Pr Eduardo</div>
+            </div>
+        </div>
+
+        <div class="linha caab p5" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">07</div>
+                <div class="evento">Entrega de materiais da EI ao 5º ano
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol</div>
+            </div>
+        </div>
+
+        <div class="linha caab p5" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">07</div>
+                <div class="evento">Reunião de Pais EI ao 5º ano – On-line
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Douglas</div>
+            </div>
+        </div>
+
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">07 a 11</div>
+                <div class="evento">Semana de Acolhimento aos alunos
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">SOE</div>
+            </div>
+        </div>
+
+
+        <div class="linha caab p5" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">07 a 11</div>
+                <div class="evento">Semana de Acolhimento- Semana de Prevenção a Acidentes e de Prevenção a Covid-19
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Denise</div>
+            </div>
+        </div>
+
+        
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">07</div>
+                <div class="evento">Início do 1º bimestre / Início das Aulas
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp"></div>
+            </div>
+        </div>
+
+
+        <div class="linha caab f2m" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">07</div>
+                <div class="evento">Celebra de Abertura do ano EFII e EM
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Cida Sandra</div>
+            </div>
+        </div>
+
+        <div class="linha caab p5" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">08</div>
+                <div class="evento">Início das Aulas – Celebra de Abertura do ano
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol Denise Pr Eduardo</div>
+            </div>
+        </div>
+
+        <div class="linha caab p5" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">08</div>
+                <div class="evento">Entrega de planejamentos e cronogramas FI  ao SOP
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">08</div>
+                <div class="evento">Dia de acolhimento aos 6ºs anos
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Cida</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">08</div>
+                <div class="evento">Data limite para entrega do planejamento ao SOP com os critérios avaliativos do bimestre
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">SOP</div>
+            </div>
+        </div>
+
+        <div class="linha caab f2m" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">08</div>
+                <div class="evento">Entrega de planejamentos e cronogramas ao SOP
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Giselle</div>
+            </div>
+        </div>
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">08</div>
+                <div class="evento">Encontro de Mentores – NEM – remoto
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Giselle</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">09</div>
+                <div class="evento">Dia de lançamento Redação Nota 1000 para alunos - Fund 2 e EM e Chave do Enem - Profº Russo e Coord. Geral - Definir horário
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Giselle</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">09 a 14</div>
+                <div class="evento">Revisão e organização dos critérios avaliativos com os devidos conteúdos do 1º bimestre - SOP
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol Giselle</div>
+            </div>
+        </div>
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">09</div>
+                <div class="evento">Capacitação Equipe das Unidades Bilíngue PR – USB
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">USB</div>
+            </div>
+        </div>
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">10</div>
+                <div class="evento">Chave do Enem – Escolha das carreiras e o papel das universidades – Projeto de Vida (remoto)
+                    <p class="detalhes">Giselle</p>
+                </div>
+                <div class="resp"></div>
+            </div>
+        </div>
+
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">10 a 19</div>
+                <div class="evento">Dez Dias de Oração 
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Pr Eduardo</div>
+            </div>
+        </div>
+
+
+        <div class="linha " onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia"></div>
+                <div class="evento">
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp"></div>
+            </div>
+        </div>
+
+        <div class="linha outros" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">11</div>
+                <div class="evento">Dia do Zelador
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Alexandro</div>
+            </div>
+        </div>
+
+        <div class="linha caab p5" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">11</div>
+                <div class="evento">Celebra EI/FI
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Pr Eduardo</div>
+            </div>
+        </div>
+
+
+        <div class="linha caab p5" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">14</div>
+                <div class="evento">Início da utilização dos Didáticos
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp"></div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">14 a 18</div>
+                <div class="evento">Agendar a simulado/avaliação diagnóstica do Aprimora
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol</div>
+            </div>
+        </div>
+
+        <div class="linha " onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia"></div>
+                <div class="evento">
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp"></div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">15</div>
+                <div class="evento">Comissão Diretiva/Educação
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp"></div>
+            </div>
+        </div>
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">17</div>
+                <div class="evento">Lançamento Chave do Enem – revisão – IAP/CPB/USB
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Giselle</div>
+            </div>
+        </div>
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">17</div>
+                <div class="evento">Comissão PMDE/Criacionismo
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp"></div>
+            </div>
+        </div>
+
+        <div class="linha caab p5" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">18</div>
+                <div class="evento">Envio dos cronogramas do 1º bimestre aos alunos
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Denise</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">18</div>
+                <div class="evento">Data limite para o envio dos cronogramas avaliativos bimestrais aos alunos – SOE responsável para disponibilizar para alunos, responsáveis e portal
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Denise Cida Sandra</div>
+            </div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">18</div>
+                <div class="evento">Envio dos cronogramas do 1º bimestre aos alunos FI/FII/EM
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Denise Cida Sandra</div>
+            </div>
+        </div>
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">20 a 23</div>
+                <div class="evento">Encontro Pastores de Escola (Pr Eduardo ausente da escola no período)
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Pr Eduardo</div>
+            </div>
+        </div>
+
+        <div class="linha caab p5" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">21 a 25</div>
+                <div class="evento">Semana de Hábitos de Estudo/Lançamento Mérito Acadêmico
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Denise</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">22</div>
+                <div class="evento">Reunião SOE e SOP - ASP
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">SOE/SOP</div>
+            </div>
+        </div>
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">23</div>
+                <div class="evento">Reunião de Assistentes Financeiros – Campos – remoto
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp"></div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">24</div>
+                <div class="evento">Data limite para o cadastro de alunos na plataforma da CPB, Aprimora, aplicativo CPB
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol Giselle</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">25</div>
+                <div class="evento">Última data para cadastro e alteração de itinerários EM
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Sandra</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">25</div>
+                <div class="evento">Data limite para a realização das entrevistas, com todos os alunos novos - SOE
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Denise Cida Sandra</div>
+            </div>
+        </div>
+
+
+        <div class="linha feriados" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">28</div>
+                <div class="evento">Recesso (Dia permutável com dia 15/05 – Domingo Letivo Dia da Mães)
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp"></div>
+            </div>
+        </div>
+
+        <div class="linha outros" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">OBS.:</div>
+                <div class="evento">Cada unidade deve... (clique para mais informações)
+                    <p class="detalhes">1ª Reunião de Pais e Mestres (até 18/02)//Divulgação do Projeto Mérito Acadêmico/Supera//Entrega do Manual da Família//Semana de Prevenção a Acidentes e de Prevenção a Covid-19 - Contar com o apoio da CIPA para realizar//
+                    Cronograma dos Celebras/Capelas do 1º bimestre – Capelão, SOP e SOE – definir um dia fixo semanal//Após a avaliação diagnóstica, início das Oficinas de Reforço Escolar (já iniciar no final de fevereiro)//Marcar a Palestra de Redação do 1º bimestre - SOP//Cronograma das Reuniões Pedagógicas/Formação Continuada//EI e Fund 1 – individual – quinzenal nas aulas diferenciadas e geral 1 mensal//Fund 2 e EM – geral 1 mensal</p>
+                </div>
+                <div class="resp"></div>
+            </div>
+        </div>
+
+
+            </div>
+
+
+<!-- MMMMMMMMMMMMMMMMMMMM      M  A  R  Ç  O      MMMMMMMMMMMMMMMMMMMM -->
+
+
+    <div class="mes" id="mar">
+    
+        <h3>Março</h3>
+
+        <div class="linha feriados" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">01</div>
+                <div class="evento">Feriado Carnaval
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp"></div>
+            </div>
+        </div>
+
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">02 a 31</div>
+                <div class="evento">Recuperação e Remediação do 1º ano - (acrescentar alunos que não estão alfabetizados)
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol Denise</div>
+            </div>
+        </div>
+
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">02 a 31</div>
+                <div class="evento">Primeira visita Indicadores de Qualidade – Escola Saudável - Campo
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">USB</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">03 a 11</div>
+                <div class="evento">Simulado Aprimora 3º ao 5º ano – diagnóstico (conteúdo anterior) – 1º e 2º anos atividades agendadas
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">03 a 11</div>
+                <div class="evento">Período de aplicação da AV1
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol Giselle</div>
+            </div>
+        </div>
+
+
+        <div class="linha caab p5" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">07 a 11</div>
+                <div class="evento">Aplicação AV1 FI
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">07 a 11</div>
+                <div class="evento">Lançamento do PMDS/PMDE
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Pr Eduardo</div>
+            </div>
+        </div>
+
+        <div class="linha caab p5" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">07 a 11</div>
+                <div class="evento">Celebra- Semana da Bíblia
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Pr Eduardo</div>
+            </div>
+        </div>
+
+        <div class="linha caab f2m" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">07 a 11</div>
+                <div class="evento">AV1 Fund II e EM
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Giselle</div>
+            </div>
+        </div>
+
+        <div class="linha caab p5" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">07</div>
+                <div class="evento">Início das Oficinas de reforço FI
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Denise</div>
+            </div>
+        </div>
+
+        <div class="linha caab f2m" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">07</div>
+                <div class="evento">Início dos reforços FII-EM
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Cida Sandra</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">07</div>
+                <div class="evento">Fazer o levantamento dos alunos que não compraram livros didáticos. (verificar primeiramente se há falta de algum livro – loja)
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Denise Cida Sandra</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">08</div>
+                <div class="evento">Dia Internacional da Mulher 
+                    <p class="detalhes">Homenagem às alunas, SOE responsável. Homenagem às funcionárias e professoras, homens da ADM.//Início às 12h e término às 13h15//Secretaria fecha para atendimento às 12h00 e reabre 13h15</p>
+                </div>
+                <div class="resp"></div>
+            </div>
+        </div>
+
+        <div class="linha caab" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">08</div>
+                <div class="evento">Freedom de Páscoa
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Pr Eduardo</div>
+            </div>
+        </div>
+
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">08</div>
+                <div class="evento">Lançamento dos cursos da Única
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Giselle</div>
+            </div>
+        </div>
+
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">08</div>
+                <div class="evento">Treinamento Pastores Escola ASP e ACP
+                    <p class="detalhes">Pr Eduardo</p>
+                </div>
+                <div class="resp"></div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">09</div>
+                <div class="evento">Treinamento TIs/MKT/Comunicação
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Douglas</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">10</div>
+                <div class="evento">Comissão Diretiva/Educação
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp"></div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">11</div>
+                <div class="evento">Data limite para aplicação da AV1
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol Giselle</div>
+            </div>
+        </div>
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">11</div>
+                <div class="evento">Encontro de Mentores – NEM – Manhã
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Giselle</div>
+            </div>
+        </div>
+
+        <div class="linha outros" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">12</div>
+                <div class="evento">Dia do Bibliotecário
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp"></div>
+            </div>
+        </div>
+
+        <div class="linha caab p5" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">14 a 18</div>
+                <div class="evento">Início das Classes Bíblicas 4º e 5º ano
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Pr Eduardo</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">14 e 15</div>
+                <div class="evento">Realização do APSE
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Sandra</div>
+            </div>
+        </div>
+
+        <div class="linha caab p5" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">14</div>
+                <div class="evento">2ª chamada AV1 FI
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp"></div>
+            </div>
+        </div>
+
+        <div class="linha caab f2m" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">14</div>
+                <div class="evento">Capacitação Redação Nota 1000 - Alunos 6º ao 9º ano - 18 horas
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Giselle</div>
+            </div>
+        </div>
+
+        <div class="linha caab f2m" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">15</div>
+                <div class="evento">2ª chamada AV1
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Cida Sandra</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">15</div>
+                <div class="evento">Coordenação fund 1 – liberar “gerar atividade de reforço” para 4ºs e 5º anos – Aprimora  (gerenciar a colocação na agenda dos alunos)
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">15</div>
+                <div class="evento">Reunião com alunos/pais bolsistas – assinatura documento(s)
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Danielle</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">15</div>
+                <div class="evento">Formação Continuada por Área - Linguagens
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Giselle</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">16</div>
+                <div class="evento">Formação Continuada por Área - Matemática
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Giselle</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">17</div>
+                <div class="evento">Formação Continuada por Área - Humanas
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Giselle</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">18</div>
+                <div class="evento">Formação Continuada por Área - Natureza
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Giselle</div>
+            </div>
+        </div>
+
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">18</div>
+                <div class="evento">Data limite para 2ª chamada da AV1
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Denise Cida Sandra</div>
+            </div>
+        </div>
+
+        <div class="linha usb" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">18</div>
+                <div class="evento">Último Ranking das Matrículas
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp"></div>
+            </div>
+        </div>
+
+        <div class="linha outros" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">19</div>
+                <div class="evento">Feriado Municipal S José dos Pinhais
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp"></div>
+            </div>
+        </div>
+
+        <div class="linha outros" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">19</div>
+                <div class="evento">Dia do Jovem Adventista
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Pr Eduardo</div>
+            </div>
+        </div>
+
+        <div class="linha outros" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">20</div>
+                <div class="evento">Feriado de Pinhais
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp"></div>
+            </div>
+        </div>
+
+        <div class="linha outros" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">20</div>
+                <div class="evento">Início do Outono
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp"></div>
+            </div>
+        </div>
+
+        
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">21/03 a 01/04</div>
+                <div class="evento">Período de aplicação da AV2 (Sugestivo)
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol Giselle</div>
+            </div>
+        </div>
+
+        
+        <div class="linha caab" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">21 a 25</div>
+                <div class="evento">Conselho Individual EI- FI
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Denise</div>
+            </div>
+        </div>
+        
+        <div class="linha usb" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">22</div>
+                <div class="evento">Conselho de Educação USB – remoto (manhã)
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp"></div>
+            </div>
+        </div>
+        
+        <div class="linha usb" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">22</div>
+                <div class="evento">Reunião Administrativa (departamentais e coordenadores) – remoto  (tarde)
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp"></div>
+            </div>
+        </div>
+        
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">22</div>
+                <div class="evento">Data limite para o lançamento das notas AV1 no SAD (prof)
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Giselle</div>
+            </div>
+        </div>
+        
+        <div class="linha caab f2m" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">24</div>
+                <div class="evento">Conselho Participativo
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Cida Sandra</div>
+            </div>
+        </div>
+        
+        <div class="linha outros" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">27</div>
+                <div class="evento">Feriado Municipal de União da Vitória
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp"></div>
+            </div>
+        </div>
+        
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">28</div>
+                <div class="evento">Capacitação Redação Nota 1000 - profes fund 2. 18 horas
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Giselle</div>
+            </div>
+        </div>
+        
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">28 a 31</div>
+                <div class="evento">Orçamentos / Entrega da planilha de parceiros
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Thiago</div>
+            </div>
+        </div>
+        
+        <div class="linha usb" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">29</div>
+                <div class="evento">Encontro de Professores de Projeto de Vida - USB
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Giselle</div>
+            </div>
+        </div>
+    
+        <div class="linha caab p5" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">31</div>
+                <div class="evento">Formação Continuada EI/FI
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol</div>
+            </div>
+        </div>
+    
+        <div class="linha caab p5" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">31/03 a 08/04</div>
+                <div class="evento">Aplicação AV2 FI
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol</div>
+            </div>
+        </div>
+    
+        <div class="linha caab" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">31</div>
+                <div class="evento">Data limite para a regularização dos registros dos conteúdos e notas do mês no SAD (prof)
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Karol Giselle Roberta</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">31</div>
+                <div class="evento">Devolutiva do APSE aos alunos e pais (zoom)
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">Sandra</div>
+            </div>
+        </div>
+    
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">OBS.:</div>
+                <div class="evento">Datas a definir... (clique para mais informações)
+                    <p class="detalhes">Eleição dos Alunos Líderes de Turma e Professores Conselheiros – SOE - cadastrar no sistema de secretaria (aluno líder e conselheiro)//Reunião com os alunos líderes de turma - SOE//Entrega da planilha com a relação dos alunos vindos das escolas parceiras, motoristas de vans, pastores e indicações de funcionários e alunos//Início das Classes Bíblicas - 4º e 5º anos//Reunião Pedagógica/Formação Continuada//Começar a pagar as 40 aulas para prof de Ed Física – aulas dos jogos – 10 em agosto/15 em setembro/15 outubro- total 40 aulas</p>
+                </div>
+                <div class="resp">Sandra</div>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    </div>
+
+
+<!-- MMMMMMMMMMMMMMMMMMMM      A  B  R  I  L      MMMMMMMMMMMMMMMMMMMM -->
+
+
+    <div class="mes" id="abr">
+    
+        <h3>Abril</h3>
+
+        <div class="linha outros" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">06</div>
+                <div class="evento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quae. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet.
+                    <p class="detalhes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, magni est. Corporis accusamus, dolores vero tenetur commodi voluptatibus unde voluptates eum autem repellendus placeat velit distinctio aliquam earum ea sit.</p></div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+
+        <div class="linha feriados" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">01</div>
+                <div class="evento">Lorem ipsum dolor sit amet. Lorem, ipsum dolor.
+                    <p class="detalhes">Lorem ipsum dolor sit amet.</p></div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+
+        <div class="linha outros" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">02</div>
+                <div class="evento">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.
+                    <p class="detalhes">Lorem, ipsum dolor sit amet consectetur adipisicing.</p></div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+
+        <div class="linha caab f2m" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">03</div>
+                <div class="evento">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">04</div>
+                <div class="evento">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+
+        <div class="linha caab p5" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">05</div>
+                <div class="evento">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+
+        <div class="linha outros" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">06</div>
+                <div class="evento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quae. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet.
+                    <p class="detalhes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, magni est. Corporis accusamus, dolores vero tenetur commodi voluptatibus unde voluptates eum autem repellendus placeat velit distinctio aliquam earum ea sit.</p></div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+
+    </div>
+
+<!-- MMMMMMMMMMMMMMMMMMMM      M  A  I  O      MMMMMMMMMMMMMMMMMMMM -->
+
+    <div class="mes" id="mai">
+        
+        <h3>Maio</h3>
+        
+        <div class="linha outros" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">06</div>
+                <div class="evento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quae. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet.
+                    <p class="detalhes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, magni est. Corporis accusamus, dolores vero tenetur commodi voluptatibus unde voluptates eum autem repellendus placeat velit distinctio aliquam earum ea sit.</p></div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+
+        <div class="linha feriados" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">01</div>
+                <div class="evento">Lorem ipsum dolor sit amet. Lorem, ipsum dolor.
+                    <p class="detalhes">Lorem ipsum dolor sit amet.</p></div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+
+        <div class="linha outros" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">02</div>
+                <div class="evento">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.
+                    <p class="detalhes">Lorem, ipsum dolor sit amet consectetur adipisicing.</p></div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+
+        <div class="linha caab f2m" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">03</div>
+                <div class="evento">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+
+        <div class="linha asp" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">04</div>
+                <div class="evento">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+
+        <div class="linha caab p5" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">05</div>
+                <div class="evento">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.
+                    <p class="detalhes"></p>
+                </div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+
+        <div class="linha outros" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">06</div>
+                <div class="evento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quae. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet.
+                    <p class="detalhes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, magni est. Corporis accusamus, dolores vero tenetur commodi voluptatibus unde voluptates eum autem repellendus placeat velit distinctio aliquam earum ea sit.</p></div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+        
+    </div>
+
+
+<!-- MMMMMMMMMMMMMMMMMMMM      J  U  N  H  O      MMMMMMMMMMMMMMMMMMMM -->
+
+
+    <div class="mes" id="jun">
+
+        <h3>Junho</h3>
+        
+        <div class="linha outros" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">06</div>
+                <div class="evento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quae. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet.
+                    <p class="detalhes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, magni est. Corporis accusamus, dolores vero tenetur commodi voluptatibus unde voluptates eum autem repellendus placeat velit distinctio aliquam earum ea sit.</p></div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+
+    </div>
+
+
+<!-- MMMMMMMMMMMMMMMMMMMM      J  U  L  H  O      MMMMMMMMMMMMMMMMMMMM -->
+
+
+    <div class="mes" id="jul">
+    
+        <h3>Julho</h3>
+    
+        <div class="linha outros" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">06</div>
+                <div class="evento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quae. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet.
+                    <p class="detalhes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, magni est. Corporis accusamus, dolores vero tenetur commodi voluptatibus unde voluptates eum autem repellendus placeat velit distinctio aliquam earum ea sit.</p></div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+
+    </div>
+
+
+<!-- MMMMMMMMMMMMMMMMMMMM      A  G  O  S  T  O      MMMMMMMMMMMMMMMMMMMM -->
+
+
+    <div class="mes" id="ago">
+
+        <h3>Agosto</h3>
+        
+        <div class="linha outros" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">06</div>
+                <div class="evento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quae. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet.
+                    <p class="detalhes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, magni est. Corporis accusamus, dolores vero tenetur commodi voluptatibus unde voluptates eum autem repellendus placeat velit distinctio aliquam earum ea sit.</p></div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+
+    </div>
+
+
+<!-- MMMMMMMMMMMMMMMMMMMM      S  E  T  E  M  B  R  O      MMMMMMMMMMMMMMMMMMMM -->
+
+
+    <div class="mes" id="set">
+
+        <h3>Setembro</h3>
+     
+        <div class="linha outros" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">06</div>
+                <div class="evento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quae. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet.
+                    <p class="detalhes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, magni est. Corporis accusamus, dolores vero tenetur commodi voluptatibus unde voluptates eum autem repellendus placeat velit distinctio aliquam earum ea sit.</p></div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+
+    </div>
+
+
+<!-- MMMMMMMMMMMMMMMMMMMM      O  U  T  U  B  R  O      MMMMMMMMMMMMMMMMMMMM --> 
+
+
+    <div class="mes" id="out">
+
+        <h3>Outubro</h3>
+
+        <div class="linha outros" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">06</div>
+                <div class="evento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quae. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet.
+                    <p class="detalhes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, magni est. Corporis accusamus, dolores vero tenetur commodi voluptatibus unde voluptates eum autem repellendus placeat velit distinctio aliquam earum ea sit.</p></div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+
+    </div>
+
+
+<!-- MMMMMMMMMMMMMMMMMMMM      N  O  V  E  M  B  R  O      MMMMMMMMMMMMMMMMMMMM --> 
+
+
+    <div class="mes" id="nov">
+
+        <h3>Novembro</h3>
+
+        <div class="linha outros" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">06</div>
+                <div class="evento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quae. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet.
+                    <p class="detalhes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, magni est. Corporis accusamus, dolores vero tenetur commodi voluptatibus unde voluptates eum autem repellendus placeat velit distinctio aliquam earum ea sit.</p></div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+
+    </div>
+
+
+<!-- MMMMMMMMMMMMMMMMMMMM      D  E  Z  E  M  B  R  O      MMMMMMMMMMMMMMMMMMMM --> 
+
+
+    <div class="mes" id="dez">
+    
+        <h3>Dezembro</h3>
+
+        <div class="linha outros" onclick="show(this)">
+            <div class="wrapper">
+                <div class="dia">06</div>
+                <div class="evento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quae. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet.
+                    <p class="detalhes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, magni est. Corporis accusamus, dolores vero tenetur commodi voluptatibus unde voluptates eum autem repellendus placeat velit distinctio aliquam earum ea sit.</p></div>
+                <div class="resp">nome</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</section>
+    <script src="calendar.js"></script>
+    <script src="scrollToTop.js"></script>
+    <script src="filters.js"></script>
+</body>
+    
+</html>
