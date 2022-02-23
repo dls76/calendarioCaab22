@@ -16,7 +16,7 @@
     <!-- onload="scroll()" -->
 
 <header>
-<div class="title">Calendário 2022</div>
+<div class="title">CALENDÁRIO</div>
 <div class="meses">
     <ul>
         <li><a href="#jan">Jan</a></li>
@@ -36,7 +36,9 @@
 </header>
 
 
+
 <div class="bt-conteiner">
+
     <div class="buttons">
         <button class="btn" onclick="filterObjects('all')">Todos</button>
         <button class="btn" onclick="filterObjects('caab')">Caab</button>
@@ -47,13 +49,59 @@
         <button class="btn" onclick="filterObjects('outros')">Outros</button>
         <button class="btn" onclick="filterObjects('feriados')">Feriados</button>
     </div>
+
 </div>
 
+
+
 <section class="conteinerprincipal">
+
+   
+
 
     <div class="wrap-cal-num">
 
         <div class="container">
+
+            <!-- <div class="conteinerFiltros">
+
+                <div class="filtroPessoas">
+
+                <select name="filtroResp" id="filtroResp">
+                    <option value="Denise">Denise</option>
+                    <option value="Karol">Karol</option>
+                    <option value="Cida">Cida</option>
+                    <option value="Giselle">Giselle</option>
+                    <option value="Sandra">Sandra</option>
+                    <option value="Roberta">Roberta</option>
+                    <option value="Thiago">Thiago</option>
+                    <option value="Douglas">Douglas</option>
+                    <option value="Danielle">Danielle</option>
+                    <option value="Pr.Eduardo">Pr.Eduardo</option>
+                    <option value="Rudi">Rudi</option>
+                </select>
+            
+                <button class="btn-filtroResp">Filtrar</button>
+
+                </div>
+
+                <div class="filtroLocais">
+
+                <select name="filtroLocais" id="filtroLocais">
+                    <option value="Todos">Todos</option>
+                    <option value="Caab">Caab</option>
+                    <option value="Infantil e Fundamental I">Infantil e Fundamental I</option>
+                    <option value="Fundamental II e Medio">Fundamental II e Médio</option>
+                    <option value="Asp">Asp</option>
+                    <option value="Usb">Usb</option>
+                    <option value="Outros">Outros</option>
+                    <option value="Feriados">Feriados</option>
+                </select>
+            
+                <button class="btn-filtroResp">Filtrar</button>
+            </div>
+
+            </div> -->
 
             <div class="calendar">
                 
@@ -85,7 +133,9 @@
                 <div class="days">
                 </div>
 
-            <button class="btn-hoje">Hoje</button>
+                <div class="conteiner-hoje">
+                    <button class="btn-hoje">Hoje</button>
+                </div>
 
             </div>
 
@@ -102,7 +152,7 @@
 
     <div class="mes" id="jan">
 
-        <h3>Janeiro</h3>
+        <h2>Janeiro</h2>
 
         <div class="linha feriados" onclick="show(this)">
             <div class="wrapper">
@@ -245,7 +295,7 @@
 
     <div class="mes" id="fev">
 
-        <h3>Fevereiro</h3>
+        <h2>Fevereiro</h2>
 
         <div class="linha asp" onclick="show(this)">
             <div class="wrapper">
@@ -554,17 +604,6 @@
             </div>
         </div>
 
-
-        <div class="linha " onclick="show(this)">
-            <div class="wrapper">
-                <div class="dia"></div>
-                <div class="evento">
-                    <p class="detalhes"></p>
-                </div>
-                <div class="resp"></div>
-            </div>
-        </div>
-
         <div class="linha outros" onclick="show(this)">
             <div class="wrapper">
                 <div class="dia">11</div>
@@ -777,7 +816,7 @@
 
     <div class="mes" id="mar">
     
-        <h3>Março</h3>
+        <h2>Março</h2>
 
         <div class="linha feriados" onclick="show(this)">
             <div class="wrapper">
@@ -1329,7 +1368,7 @@
 
     <div class="mes" id="abr">
     
-        <h3>Abril</h3>
+        <h2>Abril</h2>
 
         <div class="linha outros" onclick="show(this)">
             <div class="wrapper">
@@ -1403,7 +1442,7 @@
 
     <div class="mes" id="mai">
         
-        <h3>Maio</h3>
+        <h2>Maio</h2>
         
         <div class="linha outros" onclick="show(this)">
             <div class="wrapper">
@@ -1479,7 +1518,7 @@
 
     <div class="mes" id="jun">
 
-        <h3>Junho</h3>
+        <h2>Junho</h2>
         
         <div class="linha outros" onclick="show(this)">
             <div class="wrapper">
@@ -1498,7 +1537,7 @@
 
     <div class="mes" id="jul">
     
-        <h3>Julho</h3>
+        <h2>Julho</h2>
     
         <div class="linha outros" onclick="show(this)">
             <div class="wrapper">
@@ -1517,7 +1556,7 @@
 
     <div class="mes" id="ago">
 
-        <h3>Agosto</h3>
+        <h2>Agosto</h2>
         
         <div class="linha outros" onclick="show(this)">
             <div class="wrapper">
@@ -1536,7 +1575,7 @@
 
     <div class="mes" id="set">
 
-        <h3>Setembro</h3>
+        <h2>Setembro</h2>
      
         <div class="linha outros" onclick="show(this)">
             <div class="wrapper">
@@ -1555,7 +1594,7 @@
 
     <div class="mes" id="out">
 
-        <h3>Outubro</h3>
+        <h2>Outubro</h2>
 
         <div class="linha outros" onclick="show(this)">
             <div class="wrapper">
@@ -1574,7 +1613,7 @@
 
     <div class="mes" id="nov">
 
-        <h3>Novembro</h3>
+        <h2>Novembro</h2>
 
         <div class="linha outros" onclick="show(this)">
             <div class="wrapper">
@@ -1593,7 +1632,7 @@
 
     <div class="mes" id="dez">
     
-        <h3>Dezembro</h3>
+        <h2>Dezembro</h2>
 
         <div class="linha outros" onclick="show(this)">
             <div class="wrapper">
