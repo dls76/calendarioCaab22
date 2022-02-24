@@ -240,15 +240,14 @@ header ul li a:visited {
 .mes h3 {
     text-align: left;
     color: #122B4A;
-    margin-bottom: 20px;
-}
-
-h3 {
+    margin-bottom: 7px;
     padding: 10px 0;
     position: sticky;
-    top: 85px;
+    top: 87px;
     background-color: #fff;
+    border-left: 4px solid white;
 }
+
 
 .linha {
     width: 100%;    
