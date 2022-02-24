@@ -5,22 +5,22 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
 header {
     width: 100%;
     height: 45px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #4d1a7f;
+    background-color: #122B4A;
+    color: #fff;
     position: fixed;
     top: 0;
     z-index: 100;
+    color: #fff;
 }
 
+
 header .title {
-    color: white;
-    /* margin-left: 25px; */
     font-size: 1.7em;
     font-weight: 600;
 }
@@ -30,54 +30,54 @@ header ul {
 }
 
 header ul li {
-    margin: 0 10px;
+    margin: 0 12px;
     list-style-type: none;
 }
 
 header ul li a {
     text-decoration: none;
-    color: white;
     display: block;
-    padding: 10px;
+    padding: 11px;
+    color: #fff;
+    font-size: .7em;
 }
-
+ 
 header ul li a:hover {
-    background-color: #8532D9;
+    background-color: #FFF;
+    color: #214b80;
+    font-weight: 600;
 }
 
 
 header ul li a:visited {
     text-decoration: none;
-    color: white;
 }
 
 .bt-conteiner {
-    display: none;
+    display: flex;
     position: fixed;
     z-index: 90;
     top: 40px;
     width: 100%;
-    border: 1px solid red;
-    /* display: flex; */
-    justify-content: flex-start;
-    margin-top: 10px;
+    justify-content: space-between;
+    margin-top: 4px;
     padding-left: 10px;
     background-color: white;
+    border-bottom: 2px solid #F5f5f5;
 }
 
 .buttons {
     width: 75%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    padding: 7px 0;
-    flex: 2;
+    padding: 5px 0;
 }
 
 .buttons button {
-    width: 50px;
+    width: 70px;
     font-size: x-small;
-    margin-right: 4px;
+    margin-right: 3px;
 }
 
 .btn {
@@ -92,26 +92,19 @@ header ul li a:visited {
     background-color: rgb(184, 184, 184);
 }
 
-
-
 .conteinerprincipal {
     display: flex;
     width: 100%;
-    /* border: 10px solid green; */
 }
 
 .wrap-cal-num {
     width: 100%;
     flex: 3;
     padding-top: 50px;
-    /* background-color: whitesmoke; */
-    /* border: 4px solid red; */
 }
 
 .container {
     width: 100%;
-    /* background-color: whitesmoke; */
-    color: #4d1a7f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +113,6 @@ header ul li a:visited {
 .conteinerFiltros {
     position: fixed;
     top: 60px;
-    /* border: 1px solid green; */
 }
 
 .filtroPessoas select, .filtroLocais select {
@@ -135,19 +127,19 @@ header ul li a:visited {
 
 .calendar {
     position: fixed;
-    top: 92px;
-    border: 1px solid lightgray;
+    top: 140px;
+    left: 20px;
     width: 20rem;
-    height: 23rem;
-    background-color: whitesmoke;
-    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0);
+    height: 20rem;
+    background-color: white;
+    box-shadow: 0px 0px 4px #909090;
 }
 
 .month {
     width: 100%;
-    height: 6rem;
-    background-color: #4d1a7f;
-    color: white;
+    height: 3rem;
+    background-color: #fff;
+    color: #707070;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -155,20 +147,12 @@ header ul li a:visited {
     text-align: center;
 }
 
+.month h3 {
+    font-weight: 500;
+}
 .month i {
     font-size: 1.4rem;
     cursor: pointer;
-}
-
-.month p {
-    font-size: .7rem;
-}
-
-.month h1 {
-    font-size: 1.6rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    /* letter-spacing: 0.2rem; */
 }
 
 .weekdays {
@@ -180,7 +164,7 @@ header ul li a:visited {
 }
 
 .weekdays div {
-    font-size: .85rem;
+    font-size: .75rem;
     font-weight: 600;
     letter-spacing: 0.06rem;
     width: calc(20.2rem / 7);
@@ -197,7 +181,8 @@ header ul li a:visited {
 }
 
 .days div {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
+    /* color: #181818; */
     margin: 0.16rem;
     width: calc(17.38rem / 7);
     height: 1.7rem;
@@ -209,18 +194,17 @@ header ul li a:visited {
 }
 
 .days div:hover:not(.today) {
-    /* background-color: #4d1a7f; */
-    border: .2rem solid #8532D9;
+    border: .2rem solid gray;
     cursor: pointer;
 }
 
 .prev-date,
 .next-date {
-    opacity: .5;
+    opacity: .3;
 }
 
 .today {
-    background-color: #4d1a7f;
+    background-color: #122B4A;
     color: white;
 }
 
@@ -228,9 +212,8 @@ header ul li a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
     position: absolute;
-    bottom: 8px;
+    bottom: 9px;
     width: 100%;
 }
 
@@ -245,51 +228,46 @@ header ul li a:visited {
     flex-direction: column;
     align-items: flex-end;
     margin-top: 98px;
-    /* border: 1px solid yellow; */
 }
 
 .mes {
     width: 97%;
     margin-top: 20px;
     margin-right: 10px;
-    scroll-margin-top: 50px;
+    scroll-margin-top: 70px;
 }
 
-#jan {
-    margin-top: 0;
-}
-
-.mes h2 {
+.mes h3 {
     text-align: left;
+    color: #122B4A;
+    margin-bottom: 20px;
 }
 
-h2 {
-    padding: 4px 0 1px 10px;
-    /* color: rgb(99, 99, 99); */
-    /* border-bottom: 1px solid rgb(170, 169, 169); */
+h3 {
+    padding: 10px 0;
     position: sticky;
-    top: 45px;
+    top: 85px;
     background-color: #fff;
 }
 
 .linha {
     width: 100%;    
-    background-color: whitesmoke;
-    color: #000;
-    font-weight: 500;
+    background-color: #F8F8F8;
+    color: #404040;
+    font-weight: 700;
     font-size: small;
     text-align: left;
     margin: 4px auto;
-    padding: 6px 0;
-    border-left: 3px solid dodgerblue;
+    padding: 7px 0;
+    border-left: 4px solid #122B4A;
     cursor: pointer;
     display: none;
-    /* border: 1px solid aquamarine; */
 }
 
 .linha:hover {
-    background-color: rgb(224, 224, 224);
-    font-weight: 600;
+    /* background-color: rgb(224, 224, 224); */
+    box-shadow: .4px .4px 1.5px #404040;
+    background-color: #f0f0f0;
 }
 
 .wrapper {
@@ -330,22 +308,18 @@ h2 {
     padding-top: 7px;
 }
 
+.caab {
+    border-left: 4px solid #122B4A;
+    color: #122B4A;
+    font-weight: 700;
+}
+
 .asp, .usb {
-    border-left: 3px solid lightgreen;
+    border-left: 4px solid #e28955;
+    color: #e28955;
 }
 
-.outros {
-    border-left: 3px solid gray;
+.outros, .feriados {
+    border-left: 4px solid #696969;
+    color: #696969;
 }
-
-.feriados {
-    border-left: 3px solid gray;
-}
-
-/* .p5 {
-    color: orangered;
-}
-
-.f2m {
-    color: #4d1a7f;
-} */

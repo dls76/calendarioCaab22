@@ -40,9 +40,9 @@ const renderCalendar = () => {
 
     // document.querySelector('.date h1').innerHTML = months[date.getMonth()]
 
-    document.querySelector(".date h1").textContent = months[date.getMonth()] + ' ' + date.getFullYear()
+    document.querySelector(".date h3").textContent = months[date.getMonth()] + ' ' + date.getFullYear()
 
-    document.querySelector('.date p').innerHTML = diaSemana[dSemana] + dia + " de " + months[mes] + " de " + ano /*new Date().toDateString()*/
+    // document.querySelector('.date p').innerHTML = diaSemana[dSemana] + dia + " de " + months[mes] + " de " + ano /*new Date().toDateString()*/
 
     let days = ""
 
