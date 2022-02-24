@@ -30,7 +30,7 @@ header ul {
 }
 
 header ul li {
-    margin: 0 12px;
+    margin: 0 10px;
     list-style-type: none;
 }
 
@@ -45,7 +45,6 @@ header ul li a {
 header ul li a:hover {
     background-color: #FFF;
     color: #214b80;
-    font-weight: 600;
 }
 
 
@@ -127,7 +126,7 @@ header ul li a:visited {
 
 .calendar {
     position: fixed;
-    top: 140px;
+    top: 138px;
     left: 20px;
     width: 20rem;
     height: 20rem;
@@ -232,18 +231,18 @@ header ul li a:visited {
 
 .mes {
     width: 97%;
-    margin-top: 20px;
     margin-right: 10px;
-    scroll-margin-top: 70px;
+    /* scroll-margin-top: 70px; */
+    margin-bottom: 20px;
 }
 
 .mes h3 {
     text-align: left;
     color: #122B4A;
-    margin-bottom: 7px;
-    padding: 10px 0;
+    padding-top: 20px;
+    margin-bottom: 10px;
     position: sticky;
-    top: 87px;
+    top: 88px;
     background-color: #fff;
     border-left: 4px solid white;
 }
@@ -277,7 +276,6 @@ header ul li a:visited {
 .dia {
     flex: 1.5;
     text-align: center;
-    /* border: 1px solid blue; */
     font-size: 1.1em;
 }
 
@@ -293,7 +291,6 @@ header ul li a:visited {
     flex: 1.8;
     text-align: center;
     font-size: .8em;
-    /* border: 1px solid blue; */
 }
 
 .show {
