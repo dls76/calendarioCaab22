@@ -3,18 +3,19 @@ function scroll() {
     var data = new Date()
     var mes = data.getMonth()
 
-    var jan = document.getElementById("jan").offsetTop -86;
-    var fev = document.getElementById("fev").offsetTop -86;
-    var mar = document.getElementById("mar").offsetTop -86;
-    var abr = document.getElementById("abr").offsetTop -86;
-    var mai = document.getElementById("mai").offsetTop -86;
-    var jun = document.getElementById("jun").offsetTop -86;
-    var jul = document.getElementById("jul").offsetTop -86;
-    var ago = document.getElementById("ago").offsetTop -86;
-    var set = document.getElementById("set").offsetTop -86;
-    var out = document.getElementById("out").offsetTop -86;
-    var nov = document.getElementById("nov").offsetTop -86;
-    var dez = document.getElementById("dez").offsetTop -86;
+    // Pega os elementos h3 como referência para o offsetTop
+    var jan = document.getElementById("tJan").offsetTop -84;
+    var fev = document.getElementById("tFev").offsetTop -84;
+    var mar = document.getElementById("tMar").offsetTop -84;
+    var abr = document.getElementById("tAbr").offsetTop -86;
+    var mai = document.getElementById("tMai").offsetTop -86;
+    var jun = document.getElementById("tJun").offsetTop -86;
+    var jul = document.getElementById("tJul").offsetTop -86;
+    var ago = document.getElementById("tAgo").offsetTop -86;
+    var set = document.getElementById("tSet").offsetTop -86;
+    var out = document.getElementById("tOut").offsetTop -86;
+    var nov = document.getElementById("tNov").offsetTop -86;
+    var dez = document.getElementById("tDez").offsetTop -86;
 
 
     if (mes === 0) {window.scrollTo(0, jan)} 
