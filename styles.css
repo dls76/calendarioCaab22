@@ -322,3 +322,14 @@ header ul li a:visited {
     border-left: 4px solid #696969;
     color: #696969;
 }
+
+@media screen and (max-width: 900px) {
+    .wrap-cal-num {
+        display: none;
+    }
+
+    .objects {
+        margin: auto;
+        width: 96%;
+    }
+}
