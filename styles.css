@@ -332,4 +332,27 @@ header ul li a:visited {
         margin: auto;
         width: 96%;
     }
+
+    
+    header img, .title {
+        display: none;
+    }
+
+
+    #ul-meses {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header {
+        height: fit-content;
+    }
+
+    .bt-conteiner {
+        display: none;
+    }
+
+    .mes h3 {
+        top: 64px;
+    }
 }
