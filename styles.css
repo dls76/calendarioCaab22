@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 header {
     width: 100%;
     height: 45px;
@@ -18,25 +17,20 @@ header {
     z-index: 100;
     color: #fff;
 }
-
 header img {
     width: 100px;
 }
-
 header .title {
     font-size: 1.7em;
     font-weight: 600;
 }
-
 header ul {
     display: flex;
 }
-
 header ul li {
     margin: 0 10px;
     list-style-type: none;
 }
-
 header ul li a {
     text-decoration: none;
     display: block;
@@ -44,17 +38,13 @@ header ul li a {
     color: #fff;
     font-size: .7em;
 }
- 
 header ul li a:hover {
     background-color: #FFF;
     color: #214b80;
 }
-
-
 header ul li a:visited {
     text-decoration: none;
 }
-
 .bt-conteiner {
     display: flex;
     position: fixed;
@@ -67,7 +57,6 @@ header ul li a:visited {
     background-color: white;
     border-bottom: 2px solid #F5f5f5;
 }
-
 .buttons {
     width: 75%;
     display: flex;
@@ -75,13 +64,11 @@ header ul li a:visited {
     align-items: center;
     padding: 5px 0;
 }
-
 .buttons button {
     width: 70px;
     font-size: x-small;
     margin-right: 3px;
 }
-
 .btn {
     border: none;
     outline: none;
@@ -89,7 +76,6 @@ header ul li a:visited {
     background-color: #d8d7d7;
     cursor: pointer;
 }
-
 .btn:hover {
     background-color: rgb(184, 184, 184);
 }
@@ -98,35 +84,28 @@ header ul li a:visited {
     display: flex;
     width: 100%;
 }
-
 .wrap-cal-num {
     width: 100%;
     flex: 3;
     padding-top: 50px;
 }
-
 .container {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .conteinerFiltros {
     position: fixed;
     top: 60px;
 }
-
 .filtroPessoas select, .filtroLocais select {
     width: 70%;
     margin-bottom: 15px;
 }
-
 .filtroPessoas button, .filtroLocais button {
     width: 28%;
 }
-
-
 .calendar {
     position: fixed;
     top: 138px;
@@ -136,7 +115,6 @@ header ul li a:visited {
     background-color: white;
     box-shadow: 0px 0px 4px #909090;
 }
-
 .month {
     width: 100%;
     height: 3rem;
@@ -148,7 +126,6 @@ header ul li a:visited {
     padding: 0 1rem;
     text-align: center;
 }
-
 .month h3 {
     font-weight: 500;
 }
@@ -156,7 +133,6 @@ header ul li a:visited {
     font-size: 1.4rem;
     cursor: pointer;
 }
-
 .weekdays {
     width: 100%;
     height: 2rem;
@@ -164,7 +140,6 @@ header ul li a:visited {
     padding: .4rem .2rem;
     align-items: center;
 }
-
 .weekdays div {
     font-size: .75rem;
     font-weight: 600;
@@ -174,14 +149,12 @@ header ul li a:visited {
     justify-content: center;
     align-items: center;
 }
-
 .days {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding: .1rem;
 }
-
 .days div {
     font-size: 0.75rem;
     /* color: #181818; */
@@ -194,22 +167,18 @@ header ul li a:visited {
     align-items: center;
     transition: background-color 0.2s;
 }
-
 .days div:hover:not(.today) {
     border: .2rem solid gray;
     cursor: pointer;
 }
-
 .prev-date,
 .next-date {
     opacity: .3;
 }
-
 .today {
     background-color: #122B4A;
     color: white;
 }
-
 .conteiner-hoje {
     display: flex;
     justify-content: center;
@@ -218,12 +187,10 @@ header ul li a:visited {
     bottom: 9px;
     width: 100%;
 }
-
 .btn-hoje {
     cursor: pointer;
     width: 6rem;
 }
-
 .objects {
     width: 75%;
     display: flex;
@@ -231,14 +198,12 @@ header ul li a:visited {
     align-items: flex-end;
     margin-top: 98px;
 }
-
 .mes {
     width: 97%;
     margin-right: 10px;
     /* scroll-margin-top: 70px; */
     margin-bottom: 20px;
 }
-
 .mes h3 {
     text-align: left;
     color: #122B4A;
@@ -249,8 +214,6 @@ header ul li a:visited {
     background-color: #fff;
     border-left: 4px solid white;
 }
-
-
 .linha {
     width: 100%;    
     background-color: #F8F8F8;
@@ -264,24 +227,20 @@ header ul li a:visited {
     cursor: pointer;
     display: none;
 }
-
 .linha:hover {
     /* background-color: rgb(224, 224, 224); */
     box-shadow: .4px .4px 1.5px #404040;
     background-color: #f0f0f0;
 }
-
 .wrapper {
     display: flex;
     width: 100%;
 }
-
 .dia {
     flex: 1.5;
     text-align: center;
     font-size: 1.1em;
 }
-
 .evento {
     flex: 6.7;
     padding-left: 7px;
@@ -289,71 +248,65 @@ header ul li a:visited {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
 .resp {
     flex: 1.8;
     text-align: center;
     font-size: .8em;
 }
-
 .show {
     display: flex;
 }
-
 .detalhes {
     display: none;
     font-size: x-small;
     color: rgb(100, 100, 100);
     padding-top: 7px;
 }
-
 .caab {
     border-left: 4px solid #122B4A;
     color: #122B4A;
     font-weight: 700;
 }
-
 .asp, .usb {
     border-left: 4px solid #e28955;
     color: #e28955;
 }
-
 .outros, .feriados {
     border-left: 4px solid #696969;
     color: #696969;
 }
 
 @media screen and (max-width: 900px) {
+    
     .wrap-cal-num {
         display: none;
     }
-
     .objects {
         margin: auto;
         width: 96%;
     }
-
-    
     header img, .title {
         display: none;
     }
-
-
     #ul-meses {
         display: flex;
         flex-wrap: wrap;
     }
-
     header {
         height: fit-content;
     }
-
     .bt-conteiner {
         display: none;
     }
-
-
     .mes h3 {
         top: 100px;
+    }
+    .linha {
+        font-size: .7rem;
+        font-weight: normal;
+        border-left: 2px solid #122B4A;
+    }
+    .resp {
+        display: none;
     }
 }
