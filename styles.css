@@ -303,8 +303,8 @@ header ul li a:visited {
     }
     .linha {
         font-size: .7rem;
-        font-weight: normal;
-        border-left: 2px solid #122B4A;
+        font-weight: 500;
+        border-left: 2.5px solid #122B4A;
     }
     .resp {
         display: none;
