@@ -201,7 +201,7 @@ header ul li a:visited {
 .mes {
     width: 97%;
     margin-right: 10px;
-    /* scroll-margin-top: 70px; */
+    scroll-margin-top: 76px;
     margin-bottom: 20px;
 }
 .mes h3 {
@@ -290,6 +290,7 @@ header ul li a:visited {
     }
     #ul-meses {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
     }
     header {
@@ -299,7 +300,7 @@ header ul li a:visited {
         display: none;
     }
     .mes h3 {
-        top: 100px;
+        top: 76px;
     }
     .linha {
         font-size: .7rem;
@@ -321,3 +322,9 @@ header ul li a:visited {
         width: 96%;
     }
 }
+
+/* Add a dark background to the active button */
+.btn .active {
+    background-color: #09181F;
+    color: white;
+  }
