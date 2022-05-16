@@ -86,7 +86,7 @@ header ul li a:visited {
 }
 .wrap-cal-num {
     width: 100%;
-    flex: 3;
+    /* flex: 3; */
     padding-top: 50px;
 }
 .container {
@@ -109,7 +109,7 @@ header ul li a:visited {
 .calendar {
     position: fixed;
     top: 138px;
-    left: 20px;
+    left: 25px;
     width: 20rem;
     height: 20rem;
     background-color: white;
@@ -192,7 +192,7 @@ header ul li a:visited {
     width: 6rem;
 }
 .objects {
-    width: 75%;
+    width: 72%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
