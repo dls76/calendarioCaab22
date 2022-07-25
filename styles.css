@@ -88,6 +88,7 @@ header ul li a:visited {
     width: 100%;
     /* flex: 3; */
     padding-top: 50px;
+    display: none;
 }
 .container {
     width: 100%;

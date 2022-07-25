@@ -51,6 +51,8 @@
         <!-- <button class="btn" onclick="filterObjects('f2m')">FII-Médio</button> -->
         <button class="btn" onclick="filterObjects('asp')">Asp</button>
         <button class="btn" onclick="filterObjects('pais')">Pais</button>
+        <button class="btn" onclick="showCal()">Mostrar</button>
+        <button class="btn" onclick="hideCal()">Ocultar</button>
     </div>
 
     <div class="buttons" id="buttons2">
@@ -68,7 +70,7 @@
 <section class="conteinerprincipal">
 
     <!-- CALENDÁRIO NUMÉRICO -->
-    <div class="wrap-cal-num">
+    <div class="wrap-cal-num" id="wrap-cal-num">
 
         <div class="container">
 
@@ -83,7 +85,6 @@
                         <!-- <p></p> -->
                     </div>
                 
-
                     <i class="fa-solid fa-angle-right next"></i>
                 
                 </div>

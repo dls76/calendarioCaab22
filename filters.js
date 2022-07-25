@@ -68,3 +68,11 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+function hideCal() {
+    document.getElementById('wrap-cal-num').style.display = "none"
+}
+
+function showCal() {
+    document.getElementById('wrap-cal-num').style.display = 'block'
+}
