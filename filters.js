@@ -34,6 +34,7 @@ function removeClass(element, name){
     element.className = arr1.join(" ");
 }
 
+// Exibe e oculta detalhes do evento
 function show(e){
     let wrap = e.children
     let evento = wrap[0].children
@@ -59,20 +60,20 @@ function show(e){
 }
 
 // Add active class to the current control button (highlight it)
-var btnContainer = document.getElementById("buttons");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+// var btnContainer = document.getElementById("buttons");
+// var btns = btnContainer.getElementsByClassName("btn");
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function() {
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+// }
 
+// Exibe e oculta o calendário numérico
 function hideCal() {
     document.getElementById('wrap-cal-num').style.display = "none"
 }
-
 function showCal() {
     document.getElementById('wrap-cal-num').style.display = 'block'
     document.getElementById('objects').style.margin = "auto"

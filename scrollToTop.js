@@ -7,15 +7,15 @@ function scroll() {
     var jan = document.getElementById("tJan").offsetTop -84;
     var fev = document.getElementById("tFev").offsetTop -84;
     var mar = document.getElementById("tMar").offsetTop -84;
-    var abr = document.getElementById("tAbr").offsetTop -86;
-    var mai = document.getElementById("tMai").offsetTop -86;
-    var jun = document.getElementById("tJun").offsetTop -86;
-    var jul = document.getElementById("tJul").offsetTop -86;
-    var ago = document.getElementById("tAgo").offsetTop -86;
-    var set = document.getElementById("tSet").offsetTop -86;
-    var out = document.getElementById("tOut").offsetTop -86;
-    var nov = document.getElementById("tNov").offsetTop -86;
-    var dez = document.getElementById("tDez").offsetTop -86;
+    var abr = document.getElementById("tAbr").offsetTop -84;
+    var mai = document.getElementById("tMai").offsetTop -84;
+    var jun = document.getElementById("tJun").offsetTop -84;
+    var jul = document.getElementById("tJul").offsetTop -84;
+    var ago = document.getElementById("tAgo").offsetTop -84;
+    var set = document.getElementById("tSet").offsetTop -84;
+    var out = document.getElementById("tOut").offsetTop -84;
+    var nov = document.getElementById("tNov").offsetTop -84;
+    var dez = document.getElementById("tDez").offsetTop -84;
 
 
     if (mes === 0) {window.scrollTo(0, jan)} 

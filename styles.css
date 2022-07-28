@@ -84,6 +84,8 @@ header ul li a:visited {
     display: flex;
     width: 100%;
 }
+
+/* Conteiner do calendário numérico */
 .wrap-cal-num {
     width: 100%;
     /* flex: 3; */
@@ -278,7 +280,7 @@ header ul li a:visited {
     color: #696969;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
     
     .wrap-cal-num {
         display: none;
