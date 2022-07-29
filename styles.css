@@ -4,9 +4,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body {
+.main {
     max-width: 1280px;
-    margin: auto;
+    margin: 0 auto;
+    position: relative;
 }
 
 header {
@@ -18,11 +19,13 @@ header {
     align-items: center;
     background-color: #09181F;
     color: #fff;
-    position: fixed;
+    position: sticky;
     top: 0;
+    left: 0;
     z-index: 100;
     color: #fff;
 }
+
 header img {
     width: 100px;
 }
@@ -54,6 +57,7 @@ header ul li a:visited {
 .bt-conteiner {
     display: flex;
     position: fixed;
+    max-width: 1200px;
     z-index: 90;
     top: 40px;
     width: 100%;
@@ -95,11 +99,9 @@ header ul li a:visited {
 /* Conteiner do calendário numérico */
 .wrap-cal-num {
     width: 35%;
-    /* flex: 3; */
     padding-top: 50px;
     display: block;
-    /* justify-content: center; */
-    /* border: 2px solid red; */
+    /* border: 2px solid green; */
 }
 
 .container {
@@ -107,9 +109,9 @@ header ul li a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid green; */
-
+    border: 15px solid blue;
 }
+
 .conteinerFiltros {
     position: fixed;
     top: 60px;
@@ -124,7 +126,6 @@ header ul li a:visited {
 .calendar {
     position: fixed;
     top: 138px;
-    left: 25px;
     width: 20rem;
     height: 20rem;
     background-color: white;

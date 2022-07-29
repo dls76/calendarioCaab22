@@ -76,5 +76,5 @@ function hideCal() {
 }
 function showCal() {
     document.getElementById('wrap-cal-num').style.display = 'block'
-    document.getElementById('objects').style.margin = "auto"
+    // document.getElementById('objects').style.margin = "auto"
 }
