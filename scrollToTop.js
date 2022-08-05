@@ -33,14 +33,14 @@ function scroll() {
 
 }
 
-window.addEventListener('resize', function () {
+window.addEventListener('load', function () {
     //var altura = window.innerHeight;
     var largura = window.innerWidth;
 
     if (largura < 700) {  
-        scroll()
+        scrollMobile()
     } else {
-        scrollMobile();
+        scroll();
     }
 });
 
