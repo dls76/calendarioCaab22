@@ -32,3 +32,49 @@ function scroll() {
     else if (mes === 11){window.scrollTo(0, dez)} 
 
 }
+
+window.addEventListener('resize', function () {
+    //var altura = window.innerHeight;
+    var largura = window.innerWidth;
+
+    if (largura < 700) {  
+        scroll()
+    } else {
+        scrollMobile();
+    }
+});
+
+function scrollMobile() {
+
+    var data = new Date()
+    var mes = data.getMonth()
+
+    // Pega os elementos h3 como referência para o offsetTop
+    var jan = document.getElementById("tJan").offsetTop -110;
+    var fev = document.getElementById("tFev").offsetTop -110;
+    var mar = document.getElementById("tMar").offsetTop -110;
+    var abr = document.getElementById("tAbr").offsetTop -110;
+    var mai = document.getElementById("tMai").offsetTop -110;
+    var jun = document.getElementById("tJun").offsetTop -110;
+    var jul = document.getElementById("tJul").offsetTop -110;
+    var ago = document.getElementById("tAgo").offsetTop -110;
+    var set = document.getElementById("tSet").offsetTop -110;
+    var out = document.getElementById("tOut").offsetTop -110;
+    var nov = document.getElementById("tNov").offsetTop -110;
+    var dez = document.getElementById("tDez").offsetTop -110;
+
+
+    if (mes === 0) {window.scrollTo(0, jan)} 
+    else if (mes === 1) {window.scrollTo(0, fev)} 
+    else if (mes === 2) {window.scrollTo(0, mar)} 
+    else if (mes === 3) {window.scrollTo(0, abr)} 
+    else if (mes === 4) {window.scrollTo(0, mai)} 
+    else if (mes === 5) {window.scrollTo(0, jun)} 
+    else if (mes === 6) {window.scrollTo(0, jul)} 
+    else if (mes === 7) {window.scrollTo(0, ago)} 
+    else if (mes === 8) {window.scrollTo(0, set)} 
+    else if (mes === 9) {window.scrollTo(0, out)} 
+    else if (mes === 10){window.scrollTo(0, nov)} 
+    else if (mes === 11){window.scrollTo(0, dez)} 
+
+}
